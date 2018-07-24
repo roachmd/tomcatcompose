@@ -1,4 +1,4 @@
-# tomcatcompose
+# Tomcat Compose
 Compose file for tomcat
 ---
 
