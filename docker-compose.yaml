@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+   tomcat:
+         environment:
+            - CATALINA_TMPDIR='/usr/local/tomcat/temp'
+         image: tomcat:8.0 
+         ports:
+           - 8888:8080
+         volumes:
+           - ./temp:/usr/local/tomcat/temp
+           - ./conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
